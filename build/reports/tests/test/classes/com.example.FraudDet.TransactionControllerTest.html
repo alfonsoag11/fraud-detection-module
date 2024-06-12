@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TransactionControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TransactionControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.FraudDet.html">com.example.FraudDet</a> &gt; TransactionControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.245s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">cancelTransaction()</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">completeTransaction()</td>
+<td class="success">0.029s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createTransaction()</td>
+<td class="success">1.031s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">errorOnCancelTransaction()</td>
+<td class="success">0.087s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">errorOnCompleteTransaction()</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllTransactions()</td>
+<td class="success">0.046s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>02:09:45.820 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.FraudDet.TransactionControllerTest]: TransactionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:09:45.994 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.FraudDet.FraudDetApplication for test class com.example.FraudDet.TransactionControllerTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-06-12T02:09:46.537-06:00  INFO 33304 --- [FraudDet] [    Test worker] c.e.FraudDet.TransactionControllerTest   : Starting TransactionControllerTest using Java 17.0.11 with PID 33304 (started by alfonagg in C:\Users\alfonagg\Documents\FraudDet)
+2024-06-12T02:09:46.541-06:00  INFO 33304 --- [FraudDet] [    Test worker] c.e.FraudDet.TransactionControllerTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-06-12T02:09:47.568-06:00  INFO 33304 --- [FraudDet] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T02:09:47.650-06:00  INFO 33304 --- [FraudDet] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-06-12T02:09:48.290-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T02:09:48.535-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bf3561dc-45d7-4230-a3cd-242caeb42e5e user=SA
+2024-06-12T02:09:48.537-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T02:09:48.598-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T02:09:48.688-06:00  INFO 33304 --- [FraudDet] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-12T02:09:48.737-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T02:09:49.188-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T02:09:50.251-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-12T02:09:50.304-06:00  INFO 33304 --- [FraudDet] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-12T02:09:50.898-06:00  WARN 33304 --- [FraudDet] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-12T02:09:51.908-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-12T02:09:51.909-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-12T02:09:51.916-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2024-06-12T02:09:51.974-06:00  INFO 33304 --- [FraudDet] [    Test worker] c.e.FraudDet.TransactionControllerTest   : Started TransactionControllerTest in 5.756 seconds (process running for 7.444)
+2024-06-12T02:09:52.306-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded User{id=1, firstName='Albert', lastName='Green', email='a.g.h@locomail.com', phone='+5245567812'}
+2024-06-12T02:09:52.306-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded User{id=2, firstName='Shania', lastName='Lopez', email='shania_lz@myemail.com', phone='+5234231234'}
+2024-06-12T02:09:52.321-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded Transaction{id=1, description='Walmart Rio Frio', status=CANCELLED, risk level=LOW, amount=80.3}
+2024-06-12T02:09:52.321-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded Transaction{id=2, description='Oxxo San Pedro', status=IN_PROGRESS, risk level=MEDIUM, amount=20.0}
+2024-06-12T02:09:52.321-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded Transaction{id=3, description='ML Automatic  payment', status=IN_PROGRESS, risk level=MEDIUM, amount=30.1}
+2024-06-12T02:09:52.322-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded Transaction{id=4, description='Uber eats', status=COMPLETED, risk level=HIGH, amount=23.91}
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /transactions
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.FraudDet.Controllers.TransactionController
+           Method = com.example.FraudDet.Controllers.TransactionController#all()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/hal+json&quot;]
+     Content type = application/hal+json
+             Body = {&quot;_embedded&quot;:{&quot;transactionList&quot;:[{&quot;id&quot;:1,&quot;description&quot;:&quot;Walmart Rio Frio&quot;,&quot;amount&quot;:80.3,&quot;riskLevel&quot;:&quot;LOW&quot;,&quot;status&quot;:&quot;CANCELLED&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/1&quot;},&quot;transactions&quot;:{&quot;href&quot;:&quot;http://localhost/transactions&quot;}}},{&quot;id&quot;:2,&quot;description&quot;:&quot;Oxxo San Pedro&quot;,&quot;amount&quot;:20.0,&quot;riskLevel&quot;:&quot;MEDIUM&quot;,&quot;status&quot;:&quot;IN_PROGRESS&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/2&quot;},&quot;transactions&quot;:{&quot;href&quot;:&quot;http://localhost/transactions&quot;},&quot;cancel&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/2/cancel&quot;},&quot;complete&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/2/complete&quot;}}},{&quot;id&quot;:3,&quot;description&quot;:&quot;ML Automatic  payment&quot;,&quot;amount&quot;:30.1,&quot;riskLevel&quot;:&quot;MEDIUM&quot;,&quot;status&quot;:&quot;IN_PROGRESS&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/3&quot;},&quot;transactions&quot;:{&quot;href&quot;:&quot;http://localhost/transactions&quot;},&quot;cancel&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/3/cancel&quot;},&quot;complete&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/3/complete&quot;}}},{&quot;id&quot;:4,&quot;description&quot;:&quot;Uber eats&quot;,&quot;amount&quot;:23.91,&quot;riskLevel&quot;:&quot;HIGH&quot;,&quot;status&quot;:&quot;COMPLETED&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/4&quot;},&quot;transactions&quot;:{&quot;href&quot;:&quot;http://localhost/transactions&quot;}}},{&quot;id&quot;:5,&quot;description&quot;:&quot;Shady e-commerce&quot;,&quot;amount&quot;:100.01,&quot;riskLevel&quot;:&quot;CRITICAL&quot;,&quot;status&quot;:&quot;IN_PROGRESS&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/5&quot;},&quot;transactions&quot;:{&quot;href&quot;:&quot;http://localhost/transactions&quot;},&quot;cancel&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/5/cancel&quot;},&quot;complete&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/5/complete&quot;}}},{&quot;id&quot;:6,&quot;description&quot;:&quot;Misterious e-commerce&quot;,&quot;amount&quot;:80.8,&quot;riskLevel&quot;:&quot;HIGH&quot;,&quot;status&quot;:&quot;CANCELLED&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/6&quot;},&quot;transactions&quot;:{&quot;href&quot;:&quot;http://localhost/transactions&quot;}}},{&quot;id&quot;:7,&quot;description&quot;:&quot;Real commerce&quot;,&quot;amount&quot;:70.1,&quot;riskLevel&quot;:&quot;LOW&quot;,&quot;status&quot;:&quot;COMPLETED&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/7&quot;},&quot;transactions&quot;:{&quot;href&quot;:&quot;http://localhost/transactions&quot;}}},{&quot;id&quot;:8,&quot;description&quot;:&quot;Automatic payment&quot;,&quot;amount&quot;:1000.17,&quot;riskLevel&quot;:&quot;CRITICAL&quot;,&quot;status&quot;:&quot;CANCELLED&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost/transactions/8&quot;},&quot;transactions&quot;:{&quot;href&quot;:&quot;http://localhost/transactions&quot;}}}]},&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost/transactions&quot;}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at Jun 12, 2024, 2:09:53 AM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.FraudDet.UserControllerTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-06-12T08:09:53" hostname="REM-5CG240386X" time="0.084">
+  <properties/>
+  <testcase name="getAllUsers()" classname="com.example.FraudDet.UserControllerTests" time="0.027"/>
+  <testcase name="modifyUser()" classname="com.example.FraudDet.UserControllerTests" time="0.018"/>
+  <testcase name="createUser()" classname="com.example.FraudDet.UserControllerTests" time="0.016"/>
+  <testcase name="deleteUser()" classname="com.example.FraudDet.UserControllerTests" time="0.019"/>
+  <system-out><![CDATA[2024-06-12T02:09:53.609-06:00  INFO 33304 --- [FraudDet] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.FraudDet.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-12T02:09:53.615-06:00  INFO 33304 --- [FraudDet] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.FraudDet.FraudDetApplication for test class com.example.FraudDet.UserControllerTests
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /users
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.FraudDet.Controllers.UserController
+           Method = com.example.FraudDet.Controllers.UserController#all()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/hal+json"]
+     Content type = application/hal+json
+             Body = {"_embedded":{"userList":[{"id":1,"firstName":"Albert","lastName":"Green","phone":"+5245567812","email":"a.g.h@locomail.com","name":"Albert Green","_links":{"self":{"href":"http://localhost/users/1"},"users":{"href":"http://localhost/users"}}},{"id":2,"firstName":"Shania","lastName":"Lopez","phone":"+5234231234","email":"shania_lz@myemail.com","name":"Shania Lopez","_links":{"self":{"href":"http://localhost/users/2"},"users":{"href":"http://localhost/users"}}}]},"_links":{"self":{"href":"http://localhost/users"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

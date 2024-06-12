@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.FraudDet.TransactionControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-06-12T08:09:52" hostname="REM-5CG240386X" time="1.253">
+  <properties/>
+  <testcase name="createTransaction()" classname="com.example.FraudDet.TransactionControllerTest" time="1.031"/>
+  <testcase name="errorOnCancelTransaction()" classname="com.example.FraudDet.TransactionControllerTest" time="0.087"/>
+  <testcase name="completeTransaction()" classname="com.example.FraudDet.TransactionControllerTest" time="0.029"/>
+  <testcase name="cancelTransaction()" classname="com.example.FraudDet.TransactionControllerTest" time="0.024"/>
+  <testcase name="getAllTransactions()" classname="com.example.FraudDet.TransactionControllerTest" time="0.046"/>
+  <testcase name="errorOnCompleteTransaction()" classname="com.example.FraudDet.TransactionControllerTest" time="0.028"/>
+  <system-out><![CDATA[02:09:45.820 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.FraudDet.TransactionControllerTest]: TransactionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:09:45.994 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.FraudDet.FraudDetApplication for test class com.example.FraudDet.TransactionControllerTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-06-12T02:09:46.537-06:00  INFO 33304 --- [FraudDet] [    Test worker] c.e.FraudDet.TransactionControllerTest   : Starting TransactionControllerTest using Java 17.0.11 with PID 33304 (started by alfonagg in C:\Users\alfonagg\Documents\FraudDet)
+2024-06-12T02:09:46.541-06:00  INFO 33304 --- [FraudDet] [    Test worker] c.e.FraudDet.TransactionControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T02:09:47.568-06:00  INFO 33304 --- [FraudDet] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T02:09:47.650-06:00  INFO 33304 --- [FraudDet] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-06-12T02:09:48.290-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T02:09:48.535-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bf3561dc-45d7-4230-a3cd-242caeb42e5e user=SA
+2024-06-12T02:09:48.537-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T02:09:48.598-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T02:09:48.688-06:00  INFO 33304 --- [FraudDet] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-12T02:09:48.737-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T02:09:49.188-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T02:09:50.251-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-12T02:09:50.304-06:00  INFO 33304 --- [FraudDet] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-12T02:09:50.898-06:00  WARN 33304 --- [FraudDet] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-12T02:09:51.908-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-12T02:09:51.909-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-12T02:09:51.916-06:00  INFO 33304 --- [FraudDet] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2024-06-12T02:09:51.974-06:00  INFO 33304 --- [FraudDet] [    Test worker] c.e.FraudDet.TransactionControllerTest   : Started TransactionControllerTest in 5.756 seconds (process running for 7.444)
+2024-06-12T02:09:52.306-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded User{id=1, firstName='Albert', lastName='Green', email='a.g.h@locomail.com', phone='+5245567812'}
+2024-06-12T02:09:52.306-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded User{id=2, firstName='Shania', lastName='Lopez', email='shania_lz@myemail.com', phone='+5234231234'}
+2024-06-12T02:09:52.321-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded Transaction{id=1, description='Walmart Rio Frio', status=CANCELLED, risk level=LOW, amount=80.3}
+2024-06-12T02:09:52.321-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded Transaction{id=2, description='Oxxo San Pedro', status=IN_PROGRESS, risk level=MEDIUM, amount=20.0}
+2024-06-12T02:09:52.321-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded Transaction{id=3, description='ML Automatic  payment', status=IN_PROGRESS, risk level=MEDIUM, amount=30.1}
+2024-06-12T02:09:52.322-06:00  INFO 33304 --- [FraudDet] [    Test worker] com.example.FraudDet.LoadDatabase        : Preloaded Transaction{id=4, description='Uber eats', status=COMPLETED, risk level=HIGH, amount=23.91}
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /transactions
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.FraudDet.Controllers.TransactionController
+           Method = com.example.FraudDet.Controllers.TransactionController#all()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/hal+json"]
+     Content type = application/hal+json
+             Body = {"_embedded":{"transactionList":[{"id":1,"description":"Walmart Rio Frio","amount":80.3,"riskLevel":"LOW","status":"CANCELLED","_links":{"self":{"href":"http://localhost/transactions/1"},"transactions":{"href":"http://localhost/transactions"}}},{"id":2,"description":"Oxxo San Pedro","amount":20.0,"riskLevel":"MEDIUM","status":"IN_PROGRESS","_links":{"self":{"href":"http://localhost/transactions/2"},"transactions":{"href":"http://localhost/transactions"},"cancel":{"href":"http://localhost/transactions/2/cancel"},"complete":{"href":"http://localhost/transactions/2/complete"}}},{"id":3,"description":"ML Automatic  payment","amount":30.1,"riskLevel":"MEDIUM","status":"IN_PROGRESS","_links":{"self":{"href":"http://localhost/transactions/3"},"transactions":{"href":"http://localhost/transactions"},"cancel":{"href":"http://localhost/transactions/3/cancel"},"complete":{"href":"http://localhost/transactions/3/complete"}}},{"id":4,"description":"Uber eats","amount":23.91,"riskLevel":"HIGH","status":"COMPLETED","_links":{"self":{"href":"http://localhost/transactions/4"},"transactions":{"href":"http://localhost/transactions"}}},{"id":5,"description":"Shady e-commerce","amount":100.01,"riskLevel":"CRITICAL","status":"IN_PROGRESS","_links":{"self":{"href":"http://localhost/transactions/5"},"transactions":{"href":"http://localhost/transactions"},"cancel":{"href":"http://localhost/transactions/5/cancel"},"complete":{"href":"http://localhost/transactions/5/complete"}}},{"id":6,"description":"Misterious e-commerce","amount":80.8,"riskLevel":"HIGH","status":"CANCELLED","_links":{"self":{"href":"http://localhost/transactions/6"},"transactions":{"href":"http://localhost/transactions"}}},{"id":7,"description":"Real commerce","amount":70.1,"riskLevel":"LOW","status":"COMPLETED","_links":{"self":{"href":"http://localhost/transactions/7"},"transactions":{"href":"http://localhost/transactions"}}},{"id":8,"description":"Automatic payment","amount":1000.17,"riskLevel":"CRITICAL","status":"CANCELLED","_links":{"self":{"href":"http://localhost/transactions/8"},"transactions":{"href":"http://localhost/transactions"}}}]},"_links":{"self":{"href":"http://localhost/transactions"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
